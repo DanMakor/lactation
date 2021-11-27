@@ -4,7 +4,8 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   mode: 'jit',
   purge: [
-    './index.html'
+    './index.html',
+    './about.html'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -28,6 +29,9 @@ module.exports = {
           'Montserrat',
           ...defaultTheme.fontFamily.serif
         ]
+      },
+      height: {
+        banner: '55rem'
       }
     },
   },
